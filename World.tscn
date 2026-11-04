@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://hfdjfhpv6ty0"]
+
+[ext_resource type="Script" uid="uid://vy6fuo2f4q02" path="res://world.gd" id="1_2dftf"]
+[ext_resource type="Texture2D" uid="uid://ce4us1p028kl4" path="res://Assets/Cells.png" id="1_c6gwx"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2dftf"]
+texture = ExtResource("1_c6gwx")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_bcbcq"]
+tile_size = Vector2i(32, 32)
+sources/0 = SubResource("TileSetAtlasSource_2dftf")
+
+[node name="Node2D" type="Node2D" unique_id=231214809]
+script = ExtResource("1_2dftf")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=796543924]
+tile_set = SubResource("TileSet_bcbcq")
